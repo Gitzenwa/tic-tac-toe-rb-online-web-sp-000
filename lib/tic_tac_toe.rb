@@ -75,6 +75,4 @@ def current_player(board)
  else
    "Y"
  end
-
- end
 end
