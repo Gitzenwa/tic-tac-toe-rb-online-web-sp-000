@@ -108,3 +108,4 @@ def play(board)
   elsif won?(board) && current_player(board) == "O"
     puts "Congratulations X!"
   end
+end
