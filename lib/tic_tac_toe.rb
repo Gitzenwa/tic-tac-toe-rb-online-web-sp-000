@@ -43,7 +43,7 @@ def valid_move? (board, index)
   end
 end
 
-def turn(board)
+def turn(board, charactre)
 
   puts "Please enter 1-9:"
 
