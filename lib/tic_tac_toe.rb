@@ -69,13 +69,8 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board).even?
-    "X"
-  else
-    "O"
-  end
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
-
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
     board[combo[0]] == board[combo[1]] &&
