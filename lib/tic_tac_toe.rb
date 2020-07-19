@@ -107,7 +107,5 @@ def play(board)
     puts "Cat's Game!"
   elsif won?(board) && current_player(board) == "X"
     puts "Congratulations X!"
-  else
-    puts "Congratulations O!"
   end
 end
