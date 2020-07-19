@@ -93,7 +93,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
+  if won?(board) && current_player(board) == "X"
     winning_combo = won?(board)
     board[winning_combo[0]]
   end
