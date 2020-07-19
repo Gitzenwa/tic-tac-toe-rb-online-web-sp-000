@@ -44,7 +44,11 @@ def valid_move? (board, index)
 end
 
 def turn(board)
-  character = "X"
+  if character % 2 == 0
+     "X"
+   else
+     "O"
+   end
   puts "Please enter 1-9:"
 
   #get input
