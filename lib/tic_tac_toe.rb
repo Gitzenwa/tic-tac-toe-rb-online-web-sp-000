@@ -21,7 +21,7 @@ def input_to_index(input)
   input.to_i - 1
 end
 
-def move(board, index, @character)
+def move(board, index, character)
   board[index] = character
 end
 
@@ -53,7 +53,7 @@ def turn(board)
   #if index is valid
   if valid_move?(board, index)
   #make the move for input
-    move(board, index, @character)
+    move(board, index, character)
     display_board(board)
   #else
   else
