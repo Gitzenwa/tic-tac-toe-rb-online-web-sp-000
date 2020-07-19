@@ -103,6 +103,8 @@ def play(board)
   until over?(board)
     turn(board)
   end
+  if draw?(board)
+    puts "Cat's Game"
   if won?(board) && current_player(board) == "X"
     puts "Congratulations O!"
   elsif won?(board) && current_player(board) == "O"
