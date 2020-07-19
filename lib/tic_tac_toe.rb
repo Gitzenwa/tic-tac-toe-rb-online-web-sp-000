@@ -93,7 +93,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) && current_player(board) == "X"
+  if won?(board)
     winning_combo = won?(board)
     board[winning_combo[0]]
   end
@@ -103,9 +103,9 @@ def play(board)
   until over?(board)
     turn(board)
   end
-  if won?(board)
+  if won?(board) && current_player(board) == "X"
     puts "Congratulations X!"
-  else
+  elsif won?(board) && current_player(board) == "O"
     "Congratulations O!"
   end
 
