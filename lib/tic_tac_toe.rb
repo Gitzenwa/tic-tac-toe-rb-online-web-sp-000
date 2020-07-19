@@ -103,6 +103,7 @@ def winner(board)
 end
 
 def play?(board)
+  input = gets
   until over?(board)
     turn(board)
   end
