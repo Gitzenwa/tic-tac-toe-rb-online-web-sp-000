@@ -107,5 +107,6 @@ def play(board)
     puts "Congratulations X!"
   else
     "Congratulations O!"
+  end 
 
 end
