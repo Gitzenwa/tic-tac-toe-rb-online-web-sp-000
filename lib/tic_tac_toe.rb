@@ -106,8 +106,8 @@ def play(board)
   if draw?(board)
     puts "Cat's Game!"
   elsif won?(board) && current_player(board) == "X"
-    puts "Congratulations X!"
-  elsif won?(board) && current_player(board) == "O"
+    puts "Congratulations O!"
+  else 
     puts "Congratulations O!"
   end
 end
