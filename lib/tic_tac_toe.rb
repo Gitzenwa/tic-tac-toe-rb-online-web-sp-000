@@ -69,6 +69,6 @@ end
 
 def current_player(board)
  if turn_count(board) == 3
-   "X"
+   return"X"
  end
 end
