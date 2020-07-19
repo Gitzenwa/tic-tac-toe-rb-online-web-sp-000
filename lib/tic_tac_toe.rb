@@ -54,7 +54,7 @@ def turn(board)
   #if index is valid
   if valid_move?(board, index)
   #make the move for input
-    move(board, index, character)
+    move(board, index, current_player(board))
     display_board(board)
   #else
   else
@@ -71,6 +71,7 @@ end
 def current_player(board)
   turn_count(board) % 2 == 0 ? "X" : "O"
 end
+
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
     board[combo[0]] == board[combo[1]] &&
